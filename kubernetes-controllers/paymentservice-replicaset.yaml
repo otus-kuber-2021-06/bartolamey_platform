@@ -1,22 +1,21 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: frontend
+  name: paymentreplica
   labels:
-    app: guestbook
-    tier: frontend
+    app: paymentreplica
 spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: frontend
+      tier: paymentreplica
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: paymentreplica
     spec:
       containers:
-      - name: frontend
+      - name: paymentreplica
         image: bartolamey/mcfrontend:0.0.1
         env:
         - name: PRODUCT_CATALOG_SERVICE_ADDR

@@ -1,22 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: paymentservice
   labels:
-    app: guestbook
-    tier: frontend
+    app: paymentservice
 spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: frontend
+      tier: paymentservice
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: paymentservice
     spec:
       containers:
-      - name: frontend
+      - name: paymentservice
         image: bartolamey/mcfrontend:0.0.1
         env:
         - name: PRODUCT_CATALOG_SERVICE_ADDR
