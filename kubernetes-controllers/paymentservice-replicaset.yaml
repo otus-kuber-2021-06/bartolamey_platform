@@ -8,12 +8,10 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      tier: paymentreplica
       app: paymentreplica
   template:
     metadata:
       labels:
-        tier: paymentreplica
         app: paymentreplica
     spec:
       containers:

@@ -9,10 +9,12 @@ spec:
   replicas: 3
   selector:
     matchLabels:
+      app: frontend
       tier: frontend
   template:
     metadata:
       labels:
+        app: frontend
         tier: frontend
     spec:
       containers:
