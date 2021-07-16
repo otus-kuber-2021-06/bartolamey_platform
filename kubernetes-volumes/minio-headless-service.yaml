@@ -8,7 +8,6 @@ spec:
   clusterIP: None
   ports:
     - port: 9000
-      nodePort: 30000
       name: minio
   selector:
     app: minio
