@@ -13,6 +13,7 @@ subjects:
 - kind: ServiceAccount
   name: bob
   apiGroup: ""
+  namespace: default
 roleRef:
   kind: ClusterRole
   name: claster-admin
