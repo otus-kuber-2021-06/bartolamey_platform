@@ -19,7 +19,6 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: jane
-  apiGroup: rbac.authorization.k8s.io
   namespace: dev
 roleRef:
   kind: ClusterRole
@@ -41,7 +40,6 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: ken
-  apiGroup: rbac.authorization.k8s.io
   namespace: dev
 roleRef:
   kind: ClusterRole
