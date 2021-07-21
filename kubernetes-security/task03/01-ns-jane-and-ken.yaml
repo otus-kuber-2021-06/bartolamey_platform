@@ -22,7 +22,7 @@ subjects:
   namespace: dev
 roleRef:
   kind: ClusterRole
-  name: claster-admin
+  name: cluster-admin
   apiGroup: rbac.authorization.k8s.io
 
 ---
